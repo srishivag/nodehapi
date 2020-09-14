@@ -1,0 +1,8 @@
+{
+  "apps": [{
+    "name": "AHSE-Server-2727",
+    "script": "./bootstrap.js",
+    "watch": "./src",
+    "log_date_format": "YYYY-MM-DD HH:mm Z"
+  }]
+}

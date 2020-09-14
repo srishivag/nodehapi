@@ -1,0 +1,73 @@
+{
+  "name": "ahse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "ahse": "./compiled/server.js"
+  },
+  "scripts": {
+    "1": "babel src/ -d compiled/ && pkg -t node8-win .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bootstrap.js",
+    "upload-akrivia": "rsync -avHe ssh --exclude .git --exclude node_modules --exclude config --exclude .vscode --exclude .gitignore --exclude src/knex.js /home/vijay/apps/ehs/ohsms_server/ akrivia@172.16.16.101:/opt/lampp/htdocs/ehs_audit/server/"
+  },
+  "author": "akrivia",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "base64url": "^3.0.1",
+    "body-parser": "^1.19.0",
+    "boom": "^7.3.0",
+    "connect-multiparty": "^2.2.0",
+    "convert-excel-to-json": "^1.6.1",
+    "crypto-js": "^3.1.9-1",
+    "csv": "^1.1.1",
+    "dateformat": "^3.0.3",
+    "excelcsv": "^0.1.2",
+    "fast-csv": "^2.5.0",
+    "file-base64": "^1.0.0",
+    "forever": "^1.0.0",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "generate-password": "^1.4.1",
+    "hapi": "^16.7.0",
+    "hapi-auth-jwt": "^4.0.0",
+    "hapi-cors-headers": "^1.0.3",
+    "http": "0.0.0",
+    "image-watermark": "0.0.7",
+    "inert": "^4.2.1",
+    "joi": "^13.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwa": "^1.4.1",
+    "knex": "^0.14.6",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "nodemailer": "^4.7.0",
+    "nodemon": "^1.19.1",
+    "objection": "^1.6.8",
+    "path": "^0.12.7",
+    "pdf-write-page": "^1.2.0",
+    "request": "^2.88.0",
+    "shortid": "^2.2.14",
+    "sizeof": "^1.0.0",
+    "trycatch": "^1.5.21",
+    "underscore": "^1.9.1",
+    "underscore-node": "^0.1.2",
+    "winston-daily-rotate-file": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.2.5:3000/saruniiit/ptw"
+  },
+  "description": ""
+}
